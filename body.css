@@ -1,0 +1,209 @@
+body, h1, h2, h3, p, ul, nav, footer {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #141212; /* Dark background for a modern look */
+    color: #333;
+    background-image: url('360_F_596626503_jrzjZNYStDexiWxQFqO7oCh6M8PdMlJs.jpg'); /* Body background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styling */
+header {
+    background-color: #1e1e1e; /* Dark background for contrast */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    display: flex;
+    flex-direction: column; /* Column layout */
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 42px; /* Larger font size for a modern header */
+    letter-spacing: 3px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
+    margin-top: 20px;
+    gap: 15px; 
+}
+
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px; /* Increased padding for better clickability */
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px; /* Rounded corners for a modern look */
+    display: flex;
+    align-items: center; /* Align text vertically in the middle */
+}
+
+header nav a:hover {
+    background-color: #333333; /* Darker hover effect */
+    transform: scale(1.05);
+}
+
+/* Main content styling */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f6f9fa;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hero section styling */
+.hero {
+    color: #ffffff;
+    padding: 100px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 56px; /* Larger font size for impact */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 26px; /* Slightly larger font size for readability */
+    margin: 0;
+    color: #000000; /* Change text color to black */
+}
+
+/* Section headings */
+main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db; /* Modern blue underline */
+    padding-bottom: 10px;
+    color: #2c3e50; /* Darker text for readability */
+}
+
+/* Product grid styling */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Product card styling */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.333% - 30px);
+    box-sizing: border-box;
+    border-radius: 15px; /* Enhanced border radius for a modern look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('images/product-background.jpg'); /* Product card background image */
+    background-size: cover;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+/* Creators styling */
+.creators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.creator {
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.creator img {
+    width: 250px;
+    height: auto; /* Adjusted for proper aspect ratio */
+    border-radius: 40%;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #000000; /* Button color */
+    color: #ffffff; /* Text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* cursor to pointer on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    display: inline-block; /* Makes the button an inline-block element */
+    text-align: center; /* Center text in the button */
+}
+
+.btn:hover {
+    background-color: #050606; /* Hover color */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange list items in a row */
+    justify-content: center; /* Center the list items horizontally */
+}
+
+nav ul li {
+    margin: 0 10px; /* Add spacing between the list items */
+}
+
+/* Style the navigation links */
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+    display: block; /* Make the entire area clickable */
+}
+
+/* Hover effect for navigation links */
+nav ul li a:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}

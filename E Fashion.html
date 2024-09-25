@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostalgic Looks | E-Fashion Store</title>
+    <link rel="stylesheet" href="body.css">
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Header with navigation -->
+    <header>
+        <div class="container">
+            <h1>NOSTALGIC LOOKS</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#cart">Cart</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#privacy-policy">Privacy Policy</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+                <button class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero section with a background image -->
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to Nostalgic Store</h2>
+                <p>Discover the latest trends in fashion</p>
+            </div>
+            <div class="hero-bg"></div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-grid">
+                    <!-- T-Shirt -->
+                    <div class="product-card">
+                        <img src="Clothing/Tshirt.jpg" alt="Stylish T-Shirt">
+                        <h3>T-Shirt</h3>
+                        <p>$29.99</p>
+                        <button class="btn" data-product="Stylish T-Shirt" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Dress -->
+                    <div class="product-card">
+                        <img src="Clothing/Dress.jpg" alt="Elegant Dress">
+                        <h3>Elegant Dress</h3>
+                        <p>$79.99</p>
+                        <button class="btn" data-product="Elegant Dress" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Jeans -->
+                    <div class="product-card">
+                        <img src="Clothing/Jeans.jpg" alt="">
+                        <h3>Jeans</h3>
+                        <p>$12.99</p>
+                        <button class="btn" data-product="Jeans" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Cargos -->
+                    <div class="product-card">
+                        <img src="Clothing/Cargos.jpg" alt="">
+                        <h3>Cargos</h3>
+                        <p>$18.99</p>
+                        <button class="btn" data-product="Cargos" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Joggers -->
+                    <div class="product-card">
+                        <img src="Clothing/Joggers.jpg" alt="">
+                        <h3>Joggers</h3>
+                        <p>$13.99</p>
+                        <button class="btn" data-product="Joggers" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Shirts -->
+                    <div class="product-card">
+                        <img src="Clothing/Shirt.jpg" alt="">
+                        <h3>Shirts</h3>
+                        <p>$22.99</p>
+                        <button class="btn" data-product="Shirts" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Sweatshirts -->
+                    <div class="product-card">
+                        <img src="Clothing/Swatshirts.jpg" alt="">
+                        <h3>Sweatshirt</h3>
+                        <p>$8.99</p>
+                        <button class="btn" data-product="Sweatshirts" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Short -->
+                    <div class="product-card">
+                        <img src="Clothing/Shorts.jpg" alt="">
+                        <h3>Shorts</h3>
+                        <p>$10.99</p>
+                        <button class="btn" data-product="Shorts" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Sports vest -->
+                    <div class="product-card">
+                        <img src="Clothing/fleece-vest.jpg" alt="">
+                        <h3>Fleece-Vest</h3>
+                        <p>$14.99</p>
+                        <button class="btn" data-product="FleeceVest" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Jacket -->
+                    <div class="product-card">
+                        <img src="Clothing/Jacket.jpg" alt="Leather Jacket">
+                        <h3>Leather Jacket</h3>
+                        <p>$100.99</p>
+                        <button class="btn" data-product="Leather Jacket" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Slides -->
+                    <div class="product-card">
+                        <img src="clothing/Slides.jpg" alt="Slides">
+                        <h3>Slides</h3>
+                        <p>$17.99</p>
+                        <button class="btn" data-product="Slides" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                    <!-- Bag-->
+                    <div class="product-card">
+                        <img src="clothing/Bag.jpg" alt="Bag">
+                        <h3>Bag</h3>
+                        <p>$2100.99</p>
+                        <button class="btn" data-product="Bag" id="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit" class="btn" id="send-msg-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Cart Section -->
+        <section id="cart">
+            <div class="container">
+                <h2>Your Cart</h2>
+                <ul id="cart-list"></ul>
+                <p id="total-cost">Total: $0.00</p> <!-- Total cost element -->
+                <button class="btn" id="checkout-btn">Checkout</button>
+            </div>
+        </section>
+
+        <!-- Privacy Policy Section -->
+        <section id="privacy-policy">
+            <div class="container">
+                <h2>Privacy Policy</h2>
+                <p>Your privacy is important to us. This privacy policy explains...
+                    That if only the product is defected then only returns will be accepted.
+                </p>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+<section id="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>Welcome to Nostalgic Store! 
+            where fashion meets passion! We are dedicated to empowering individuals through style,offering a carefully curated collection of clothing and accessories that reflect the latest trends and timeless classics.
+            Join us on this stylish journey! Explore our collections, find your perfect outfit, and express yourself with us.Thank you for being a part of our community!.</p>
+        <!-- Adding creators' pictures and information -->
+        <div class="creators">
+            <div class="creator">
+                <img src="shoyeb.jpg" alt="Creator 1">
+                <h3>Shoyeb</h3>
+                <p>Developer</p>
+            </div>
+            <!-- Add more creators as needed -->
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- JavaScript for cart functionality -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cart = [];
+            let totalCost = 0;
+
+            // Function to update the cart display
+            const updateCartDisplay = () => {
+                const cartList = document.getElementById("cart-list");
+                const totalCostElement = document.getElementById("total-cost");
+                cartList.innerHTML = "";
+                totalCost = 0;
+
+                cart.forEach((item, index) => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `${item.name} - $${item.price}`;
+                    
+                    // Calculate total cost
+                    totalCost += item.price;
+
+                    // Remove button for each item
+                    const removeButton = document.createElement("button");
+                    removeButton.textContent = "Remove";
+                    removeButton.addEventListener("click", () => {
+                        removeFromCart(index);
+                    });
+                    
+                    listItem.appendChild(removeButton);
+                    cartList.appendChild(listItem);
+                });
+
+                // Update total cost
+                totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`;
+
+                // If cart is empty
+                if (cart.length === 0) {
+                    cartList.innerHTML = "<li>Your cart is empty.</li>";
+                    totalCostElement.textContent = "Total: $0.00";
+                }
+            };
+
+            // Function to add items to cart
+            const addToCart = (product) => {
+                cart.push(product);
+                updateCartDisplay();
+                alert(`${product.name} added to the cart.`);
+            };
+
+            // Function to remove items from the cart
+            const removeFromCart = (index) => {
+                cart.splice(index, 1);
+                updateCartDisplay();
+            };
+
+            // Add event listeners to the "Add to Cart" buttons
+            const addToCartButtons = document.querySelectorAll("#add-to-cart-btn");
+            addToCartButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const product = {
+                        name: button.dataset.product,
+                        price: parseFloat(button.previousElementSibling.textContent.replace('$', ''))
+                    };
+                    addToCart(product);
+                });
+            });
+
+            // Checkout button behavior
+            document.getElementById("checkout-btn").addEventListener("click", () => {
+                if (cart.length === 0) {
+                    alert("Your cart is empty.");
+                } else {
+                    alert("Proceeding to checkout...");
+                    // Here you can redirect to a payment page or further actions
+                }
+            });
+        });
+    </script>
+</body>
+</html>
