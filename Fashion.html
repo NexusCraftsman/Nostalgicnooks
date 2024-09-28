@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nostalgic Looks | E-Fashion Store</title>
     <link rel="stylesheet" href="body.css">
+    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -31,7 +32,7 @@
 
     <!-- Main content -->
     <main>
-        <!-- Hero section -->
+        <!-- Hero section with a background image -->
         <section id="home" class="hero">
             <div class="container">
                 <h2>Welcome to Nostalgic Store</h2>
@@ -45,73 +46,84 @@
             <div class="container">
                 <h2>Our Products</h2>
                 <div class="product-grid">
-                    <!-- Product Cards -->
+                    <!-- T-Shirt -->
                     <div class="product-card">
                         <img src="Clothing/Tshirt.jpg" alt="Stylish T-Shirt">
                         <h3>T-Shirt</h3>
                         <p>$29.99</p>
                         <button class="btn" data-product="Stylish T-Shirt" data-price="29.99">Add to Cart</button>
                     </div>
+                    <!-- Dress -->
                     <div class="product-card">
                         <img src="Clothing/Dress.jpg" alt="Elegant Dress">
                         <h3>Elegant Dress</h3>
                         <p>$79.99</p>
                         <button class="btn" data-product="Elegant Dress" data-price="79.99">Add to Cart</button>
                     </div>
+                    <!-- Jeans -->
                     <div class="product-card">
                         <img src="Clothing/Jeans.jpg" alt="">
                         <h3>Jeans</h3>
                         <p>$12.99</p>
                         <button class="btn" data-product="Jeans" data-price="12.99">Add to Cart</button>
                     </div>
+                    <!-- Cargos -->
                     <div class="product-card">
                         <img src="Clothing/Cargos.jpg" alt="">
                         <h3>Cargos</h3>
                         <p>$18.99</p>
                         <button class="btn" data-product="Cargos" data-price="18.99">Add to Cart</button>
                     </div>
+                    <!-- Joggers -->
                     <div class="product-card">
                         <img src="Clothing/Joggers.jpg" alt="">
                         <h3>Joggers</h3>
                         <p>$13.99</p>
                         <button class="btn" data-product="Joggers" data-price="13.99">Add to Cart</button>
                     </div>
+                    <!-- Shirts -->
                     <div class="product-card">
                         <img src="Clothing/Shirt.jpg" alt="">
                         <h3>Shirts</h3>
                         <p>$22.99</p>
                         <button class="btn" data-product="Shirts" data-price="22.99">Add to Cart</button>
                     </div>
+                    <!-- Sweatshirts -->
                     <div class="product-card">
                         <img src="Clothing/Sweatshirts.jpg" alt="">
                         <h3>Sweatshirt</h3>
                         <p>$8.99</p>
                         <button class="btn" data-product="Sweatshirts" data-price="8.99">Add to Cart</button>
                     </div>
+                    <!-- Short -->
                     <div class="product-card">
                         <img src="Clothing/Shorts.jpg" alt="">
                         <h3>Shorts</h3>
                         <p>$10.99</p>
                         <button class="btn" data-product="Shorts" data-price="10.99">Add to Cart</button>
                     </div>
+                    <!-- Sports vest -->
                     <div class="product-card">
                         <img src="Clothing/fleece-vest.jpg" alt="">
                         <h3>Fleece-Vest</h3>
                         <p>$14.99</p>
-                        <button class="btn" data-product="FleeceVest" data-price="14.99">Add to Cart</button>
+                        <button class="btn" data-product="Fleece Vest" data-price="14.99">Add to Cart</button>
                     </div>
+                    <!-- Jacket -->
                     <div class="product-card">
                         <img src="Clothing/jacket .jpg" alt="Leather Jacket">
                         <h3>Bomber Jacket</h3>
                         <p>$100.99</p>
                         <button class="btn" data-product="Leather Jacket" data-price="100.99">Add to Cart</button>
                     </div>
+                    <!-- Slides -->
                     <div class="product-card">
                         <img src="Clothing/Slides.jpg" alt="Slides">
                         <h3>Slides</h3>
                         <p>$17.99</p>
                         <button class="btn" data-product="Slides" data-price="17.99">Add to Cart</button>
                     </div>
+                    <!-- Bag-->
                     <div class="product-card">
                         <img src="Clothing/bag.jpg" alt="Bag">
                         <h3>Bag</h3>
@@ -143,8 +155,9 @@
             <div class="container">
                 <h2>Your Cart</h2>
                 <ul id="cart-list"></ul>
-                <p id="total-cost">Total: $0.00</p>
+                <p id="total-cost">Total: $0.00</p> <!-- Total cost element -->
                 <button class="btn" id="checkout-btn">Checkout</button>
+                <div class="notification" id="notification"></div> <!-- Notification element -->
             </div>
         </section>
 
@@ -163,16 +176,25 @@
             <div class="container">
                 <h2>About Us</h2>
                 <p>Welcome to Nostalgic Store! We are dedicated to providing the latest trends in fashion. Our mission is to offer stylish and affordable fashion to everyone.</p>
+                <!-- Adding creators' pictures and information -->
                 <div class="creators">
                     <div class="creator">
                         <img src="shoyeb.jpg" alt="Creator 1">
                         <h3>Shoyeb</h3>
                         <p>Developer</p>
                     </div>
+                    <!-- Add more creators as needed -->
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nostalgic Looks. All rights reserved.</p>
+        </div>
+    </footer>
 
     <!-- Login Modal -->
     <div id="loginModal" class="modal">
@@ -216,53 +238,120 @@
         </div>
     </div>
 
-    <div id="notification" class="notification">Item added to cart!</div>
-
-    <!-- JavaScript -->
+    <!-- JavaScript for modal functionality and cart logic -->
     <script>
-        // Cart functionality
-        const cartList = document.getElementById("cart-list");
-        const totalCostElement = document.getElementById("total-cost");
-        let totalCost = 0;
+        document.addEventListener("DOMContentLoaded", () => {
+            // Get the modal elements
+            const loginModal = document.getElementById("loginModal");
+            const signupModal = document.getElementById("signupModal");
+            const notification = document.getElementById("notification");
 
-        // Add event listener to each Add to Cart button
-        const addToCartButtons = document.querySelectorAll('.btn[data-product]');
-        addToCartButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const product = button.getAttribute('data-product');
-                const price = parseFloat(button.getAttribute('data-price'));
+            // Get the buttons that open the modals
+            const loginBtn = document.getElementById("loginBtn");
+            const signupBtn = document.getElementById("signupBtn");
 
-                // Add item to the cart list
-                const listItem = document.createElement('li');
-                listItem.textContent = `${product} - $${price.toFixed(2)}`;
+            // Get the <span> elements that close the modals
+            const closeLogin = document.getElementById("closeLogin");
+            const closeSignup = document.getElementById("closeSignup");
 
-                // Create a remove button
-                const removeButton = document.createElement('button');
-                removeButton.textContent = 'Remove';
-                removeButton.classList.add('remove-btn');
-                removeButton.onclick = () => {
-                    // Update total cost
-                    totalCost -= price; // Subtract price of removed item
-                    totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`; // Update displayed total
+            // Cart functionality
+            let cart = [];
+            let totalCost = 0;
 
-                    // Remove the item from the cart list
-                    cartList.removeChild(listItem);
-                };
+            // Update cart display
+            function updateCart() {
+                const cartList = document.getElementById("cart-list");
+                const totalCostElement = document.getElementById("total-cost");
 
-                // Append the remove button to the list item
-                listItem.appendChild(removeButton);
-                cartList.appendChild(listItem); // Append only once
+                // Clear previous cart items
+                cartList.innerHTML = '';
+                cart.forEach(item => {
+                    const li = document.createElement("li");
+                    li.textContent = `${item.name} - $${item.price}`;
+
+                    // Create a remove button
+                    const removeBtn = document.createElement("button");
+                    removeBtn.textContent = "Remove";
+                    removeBtn.classList.add("remove-btn");
+                    removeBtn.onclick = () => {
+                        // Remove the item from the cart
+                        cart = cart.filter(cartItem => cartItem.name !== item.name);
+                        totalCost -= item.price; // Update total cost
+                        updateCart(); // Refresh cart display
+                        showNotification(`${item.name} removed from cart.`);
+                    };
+
+                    li.appendChild(removeBtn); // Add remove button to list item
+                    cartList.appendChild(li);
+                });
 
                 // Update total cost
-                totalCost += price; // Add price of new item
-                totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`; // Update displayed total
+                totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`;
+            }
 
-                // Show notification
+            // Show notification
+            function showNotification(message) {
+                notification.textContent = message;
                 notification.style.display = "block";
                 setTimeout(() => {
                     notification.style.display = "none";
                 }, 3000); // Hide after 3 seconds
+            }
+
+            // Add to cart functionality
+            const addToCartButtons = document.querySelectorAll('.btn[data-product]');
+            addToCartButtons.forEach(button => {
+                button.onclick = () => {
+                    const productName = button.getAttribute('data-product');
+                    const productPrice = parseFloat(button.getAttribute('data-price'));
+
+                    // Check if the product is already in the cart
+                    const existingProduct = cart.find(item => item.name === productName);
+                    if (existingProduct) {
+                        // If the product exists, just update the quantity or ignore
+                        showNotification(`${productName} is already in your cart!`);
+                        return;
+                    }
+
+                    // Add product to cart
+                    cart.push({ name: productName, price: productPrice });
+                    totalCost += productPrice;
+
+                    // Update cart display
+                    updateCart();
+                    showNotification(`${productName} added to cart!`); // Show notification
+                };
             });
+
+            // Open login modal
+            loginBtn.onclick = () => {
+                loginModal.style.display = "block";
+            };
+
+            // Open signup modal
+            signupBtn.onclick = () => {
+                signupModal.style.display = "block";
+            };
+
+            // Close login modal
+            closeLogin.onclick = () => {
+                loginModal.style.display = "none";
+            };
+
+            // Close signup modal
+            closeSignup.onclick = () => {
+                signupModal.style.display = "none";
+            };
+
+            // Close modal when clicking outside of it
+            window.onclick = (event) => {
+                if (event.target === loginModal) {
+                    loginModal.style.display = "none";
+                }
+                if (event.target === signupModal) {
+                    signupModal.style.display = "none";
+                }
+            };
         });
     </script>
 </body>
