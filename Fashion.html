@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nostalgic Looks | E-Fashion Store</title>
     <link rel="stylesheet" href="body.css">
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
@@ -21,7 +20,6 @@
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#privacy-policy">Privacy Policy</a></li>
                     <li><a href="#about">About Us</a></li>
-                    <!-- Moved auth buttons inside the nav menu as list items -->
                     <li class="auth-buttons">
                         <button id="loginBtn"><i class="fas fa-sign-in-alt"></i> Login</button>
                         <button id="signupBtn"><i class="fas fa-user-plus"></i> Sign Up</button>
@@ -33,7 +31,7 @@
 
     <!-- Main content -->
     <main>
-        <!-- Hero section with a background image -->
+        <!-- Hero section -->
         <section id="home" class="hero">
             <div class="container">
                 <h2>Welcome to Nostalgic Store</h2>
@@ -47,89 +45,78 @@
             <div class="container">
                 <h2>Our Products</h2>
                 <div class="product-grid">
-                    <!-- T-Shirt -->
+                    <!-- Product Cards -->
                     <div class="product-card">
                         <img src="Clothing/Tshirt.jpg" alt="Stylish T-Shirt">
                         <h3>T-Shirt</h3>
                         <p>$29.99</p>
-                        <button class="btn" data-product="Stylish T-Shirt" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Stylish T-Shirt" data-price="29.99">Add to Cart</button>
                     </div>
-                    <!-- Dress -->
                     <div class="product-card">
                         <img src="Clothing/Dress.jpg" alt="Elegant Dress">
                         <h3>Elegant Dress</h3>
                         <p>$79.99</p>
-                        <button class="btn" data-product="Elegant Dress" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Elegant Dress" data-price="79.99">Add to Cart</button>
                     </div>
-                    <!-- Jeans -->
                     <div class="product-card">
                         <img src="Clothing/Jeans.jpg" alt="">
                         <h3>Jeans</h3>
                         <p>$12.99</p>
-                        <button class="btn" data-product="Jeans" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Jeans" data-price="12.99">Add to Cart</button>
                     </div>
-                    <!-- Cargos -->
                     <div class="product-card">
-                        <img src="Clothing/cargos.jpg" alt="">
+                        <img src="Clothing/Cargos.jpg" alt="">
                         <h3>Cargos</h3>
                         <p>$18.99</p>
-                        <button class="btn" data-product="Cargos" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Cargos" data-price="18.99">Add to Cart</button>
                     </div>
-                    <!-- Joggers -->
                     <div class="product-card">
                         <img src="Clothing/Joggers.jpg" alt="">
                         <h3>Joggers</h3>
                         <p>$13.99</p>
-                        <button class="btn" data-product="Joggers" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Joggers" data-price="13.99">Add to Cart</button>
                     </div>
-                    <!-- Shirts -->
                     <div class="product-card">
                         <img src="Clothing/Shirt.jpg" alt="">
                         <h3>Shirts</h3>
                         <p>$22.99</p>
-                        <button class="btn" data-product="Shirts" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Shirts" data-price="22.99">Add to Cart</button>
                     </div>
-                    <!-- Sweatshirts -->
                     <div class="product-card">
-                        <img src="Clothing/Swatshirts.jpg" alt="">
+                        <img src="Clothing/Sweatshirts.jpg" alt="">
                         <h3>Sweatshirt</h3>
                         <p>$8.99</p>
-                        <button class="btn" data-product="Sweatshirts" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Sweatshirts" data-price="8.99">Add to Cart</button>
                     </div>
-                    <!-- Short -->
                     <div class="product-card">
                         <img src="Clothing/Shorts.jpg" alt="">
                         <h3>Shorts</h3>
                         <p>$10.99</p>
-                        <button class="btn" data-product="Shorts" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Shorts" data-price="10.99">Add to Cart</button>
                     </div>
-                    <!-- Sports vest -->
                     <div class="product-card">
                         <img src="Clothing/fleece-vest.jpg" alt="">
                         <h3>Fleece-Vest</h3>
                         <p>$14.99</p>
-                        <button class="btn" data-product="FleeceVest" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="FleeceVest" data-price="14.99">Add to Cart</button>
                     </div>
-                    <!-- Jacket -->
                     <div class="product-card">
-                        <img src="Clothing/jacket .jpg" alt="Leather Jacket">
-                        <h3>Bomber Jacket</h3>
+                        <img src="Clothing/Jacket.jpg" alt="Leather Jacket">
+                        <h3>Leather Jacket</h3>
                         <p>$100.99</p>
-                        <button class="btn" data-product="Leather Jacket" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Leather Jacket" data-price="100.99">Add to Cart</button>
                     </div>
-                    <!-- Slides -->
                     <div class="product-card">
                         <img src="Clothing/Slides.jpg" alt="Slides">
                         <h3>Slides</h3>
                         <p>$17.99</p>
-                        <button class="btn" data-product="Slides" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Slides" data-price="17.99">Add to Cart</button>
                     </div>
-                    <!-- Bag-->
                     <div class="product-card">
                         <img src="Clothing/bag.jpg" alt="Bag">
                         <h3>Bag</h3>
                         <p>$2100.99</p>
-                        <button class="btn" data-product="Bag" id="add-to-cart-btn">Add to Cart</button>
+                        <button class="btn" data-product="Bag" data-price="2100.99">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -156,7 +143,7 @@
             <div class="container">
                 <h2>Your Cart</h2>
                 <ul id="cart-list"></ul>
-                <p id="total-cost">Total: $0.00</p> <!-- Total cost element -->
+                <p id="total-cost">Total: $0.00</p>
                 <button class="btn" id="checkout-btn">Checkout</button>
             </div>
         </section>
@@ -176,14 +163,12 @@
             <div class="container">
                 <h2>About Us</h2>
                 <p>Welcome to Nostalgic Store! We are dedicated to providing the latest trends in fashion. Our mission is to offer stylish and affordable fashion to everyone.</p>
-                <!-- Adding creators' pictures and information -->
                 <div class="creators">
                     <div class="creator">
                         <img src="shoyeb.jpg" alt="Creator 1">
                         <h3>Shoyeb</h3>
                         <p>Developer</p>
                     </div>
-                    <!-- Add more creators as needed -->
                 </div>
             </div>
         </section>
@@ -231,50 +216,53 @@
         </div>
     </div>
 
-    <!-- JavaScript for modal functionality -->
+    <div id="notification" class="notification">Item added to cart!</div>
+
+    <!-- JavaScript -->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            // Get the modal elements
-            const loginModal = document.getElementById("loginModal");
-            const signupModal = document.getElementById("signupModal");
+        // Cart functionality
+        const cartList = document.getElementById("cart-list");
+        const totalCostElement = document.getElementById("total-cost");
+        let totalCost = 0;
 
-            // Get the buttons that open the modals
-            const loginBtn = document.getElementById("loginBtn");
-            const signupBtn = document.getElementById("signupBtn");
+        // Add event listener to each Add to Cart button
+        const addToCartButtons = document.querySelectorAll('.btn[data-product]');
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.getAttribute('data-product');
+                const price = parseFloat(button.getAttribute('data-price'));
 
-            // Get the <span> elements that close the modals
-            const closeLogin = document.getElementById("closeLogin");
-            const closeSignup = document.getElementById("closeSignup");
+                // Add item to the cart list
+                const listItem = document.createElement('li');
+                listItem.textContent = `${product} - $${price.toFixed(2)}`;
 
-            // Open login modal
-            loginBtn.onclick = () => {
-                loginModal.style.display = "block";
-            };
+                // Create a remove button
+                const removeButton = document.createElement('button');
+                removeButton.textContent = 'Remove';
+                removeButton.classList.add('remove-btn');
+                removeButton.onclick = () => {
+                    // Update total cost
+                    totalCost -= price; // Subtract price of removed item
+                    totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`; // Update displayed total
 
-            // Open signup modal
-            signupBtn.onclick = () => {
-                signupModal.style.display = "block";
-            };
+                    // Remove the item from the cart list
+                    cartList.removeChild(listItem);
+                };
 
-            // Close login modal
-            closeLogin.onclick = () => {
-                loginModal.style.display = "none";
-            };
+                // Append the remove button to the list item
+                listItem.appendChild(removeButton);
+                cartList.appendChild(listItem); // Append only once
 
-            // Close signup modal
-            closeSignup.onclick = () => {
-                signupModal.style.display = "none";
-            };
+                // Update total cost
+                totalCost += price; // Add price of new item
+                totalCostElement.textContent = `Total: $${totalCost.toFixed(2)}`; // Update displayed total
 
-            // Close modal when clicking outside of it
-            window.onclick = (event) => {
-                if (event.target === loginModal) {
-                    loginModal.style.display = "none";
-                }
-                if (event.target === signupModal) {
-                    signupModal.style.display = "none";
-                }
-            };
+                // Show notification
+                notification.style.display = "block";
+                setTimeout(() => {
+                    notification.style.display = "none";
+                }, 3000); // Hide after 3 seconds
+            });
         });
     </script>
 </body>
